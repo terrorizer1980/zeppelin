@@ -23,7 +23,7 @@ RUN mkdir -p /opt/zeppelin/interpreter && \
     cd /tmp/interpreter && \
     find . -name 'interpreter-setting.json' -exec cp --parents \{\} /opt/zeppelin/interpreter \;
 
-FROM ubuntu:20.04
+FROM ubuntu:20.10
 LABEL maintainer="Apache Software Foundation <dev@zeppelin.apache.org>"
 
 RUN set -ex && \
