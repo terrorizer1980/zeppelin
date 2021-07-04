@@ -15,7 +15,7 @@
 
 FROM zeppelin-distribution:latest AS zeppelin-distribution
 
-FROM ubuntu:20.04
+FROM ubuntu:20.10
 
 LABEL maintainer="Apache Software Foundation <dev@zeppelin.apache.org>"
 
