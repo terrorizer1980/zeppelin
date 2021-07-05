@@ -37,7 +37,7 @@
 
     <properties>
         <adl.sdk.version>2.1.4</adl.sdk.version>
-        <azure.storage.version>4.0.0</azure.storage.version>
+        <azure.storage.version>4.4.0</azure.storage.version>
         <plugin.name>NotebookRepo/AzureNotebookRepo</plugin.name>
     </properties>
 
