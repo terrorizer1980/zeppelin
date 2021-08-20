@@ -156,7 +156,7 @@
     <hadoop.deps.scope>provided</hadoop.deps.scope>
     <quartz.scheduler.version>2.3.2</quartz.scheduler.version>
     <jettison.version>1.4.0</jettison.version>
-    <jsoup.version>1.13.1</jsoup.version>
+    <jsoup.version>1.14.2</jsoup.version>
 
     <!-- test library versions -->
     <junit.version>4.12</junit.version>
@@ -1373,7 +1373,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
