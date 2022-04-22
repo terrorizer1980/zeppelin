@@ -44,7 +44,7 @@
          instead of changing spark.version in this section.
     -->
 
-    <hadoop.version>${hadoop2.7.version}</hadoop.version>
+    <hadoop.version>3.2.3</hadoop.version>
     <yarn.version>${hadoop.version}</yarn.version>
     <avro.version>1.7.7</avro.version>
     <avro.mapred.classifier/>
@@ -283,11 +283,8 @@
             <configuration>
               <target>
                 <delete dir="../../interpreter/spark/pyspark"/>
-                <copy todir="../../interpreter/spark/pyspark"
-                      file="${project.build.directory}/${spark.archive}/python/lib/py4j-${py4j.version}-src.zip"/>
-                <zip destfile="${project.build.directory}/../../../interpreter/spark/pyspark/pyspark.zip"
-                     basedir="${project.build.directory}/${spark.archive}/python"
-                     includes="pyspark/*.py,pyspark/**/*.py"/>
+                <copy todir="../../interpreter/spark/pyspark" file="${project.build.directory}/${spark.archive}/python/lib/py4j-${py4j.version}-src.zip"/>
+                <zip destfile="${project.build.directory}/../../../interpreter/spark/pyspark/pyspark.zip" basedir="${project.build.directory}/${spark.archive}/python" includes="pyspark/*.py,pyspark/**/*.py"/>
               </target>
             </configuration>
           </execution>
