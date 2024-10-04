@@ -35,7 +35,7 @@
   <properties>
     <!--library versions-->
     <interpreter.name>submarine</interpreter.name>
-    <hadoop.version>${hadoop2.7.version}</hadoop.version>
+    <hadoop.version>3.4.0</hadoop.version>
     <jinjava.version>2.4.0</jinjava.version>
     <squirrel.version>0.3.8</squirrel.version>
     <guava.version>24.1.1-jre</guava.version>
@@ -55,7 +55,7 @@
     <dependency>
       <groupId>org.apache.zeppelin</groupId>
       <artifactId>zeppelin-python</artifactId>
-      <version>0.10.0-SNAPSHOT</version>
+      <version>0.11.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.zeppelin</groupId>
@@ -71,7 +71,7 @@
     <dependency>
       <groupId>org.apache.zeppelin</groupId>
       <artifactId>zeppelin-shell</artifactId>
-      <version>0.10.0-SNAPSHOT</version>
+      <version>0.11.2</version>
     </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
