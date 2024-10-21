@@ -211,7 +211,7 @@
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-client</artifactId>
-      <version>2.6.0</version>
+      <version>3.4.1</version>
       <scope>provided</scope>
     </dependency>
 
@@ -406,9 +406,9 @@
             </goals>
             <configuration>
               <target>
-                <delete dir="../../interpreter/spark/pyspark" />
-                <copy file="${project.build.directory}/${spark.archive}/python/lib/py4j-${py4j.version}-src.zip" todir="${project.build.directory}/../../../interpreter/spark/pyspark" />
-                <zip basedir="${project.build.directory}/${spark.archive}/python" destfile="${project.build.directory}/../../../interpreter/spark/pyspark/pyspark.zip" includes="pyspark/*.py,pyspark/**/*.py" />
+                <delete dir="../../interpreter/spark/pyspark"/>
+                <copy file="${project.build.directory}/${spark.archive}/python/lib/py4j-${py4j.version}-src.zip" todir="${project.build.directory}/../../../interpreter/spark/pyspark"/>
+                <zip basedir="${project.build.directory}/${spark.archive}/python" destfile="${project.build.directory}/../../../interpreter/spark/pyspark/pyspark.zip" includes="pyspark/*.py,pyspark/**/*.py"/>
               </target>
             </configuration>
           </execution>
@@ -499,7 +499,7 @@
           </artifactSet>
 
           <transformers>
-            <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+            <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
             <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
               <resource>reference.conf</resource>
             </transformer>
