@@ -38,8 +38,8 @@
     <!--library versions-->
     <interpreter.name>flink</interpreter.name>
     <flink.version>${flink1.10.version}</flink.version>
-    <flink.hadoop.version>2.6.5</flink.hadoop.version>
-    <hive.version>2.3.4</hive.version>
+    <flink.hadoop.version>3.0.0</flink.hadoop.version>
+    <hive.version>3.0.0</hive.version>
     <hiverunner.version>4.0.0</hiverunner.version>
     <grpc.version>1.15.0</grpc.version>
 
@@ -945,7 +945,7 @@
           </artifactSet>
 
           <transformers>
-            <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+            <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
             <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
               <resource>reference.conf</resource>
             </transformer>
@@ -1011,7 +1011,7 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <hive.version>2.3.4</hive.version>
+        <hive.version>3.0.0</hive.version>
         <hiverunner.version>4.0.0</hiverunner.version>
       </properties>
     </profile>
@@ -1019,7 +1019,7 @@
     <profile>
       <id>hive1</id>
       <properties>
-        <hive.version>1.2.1</hive.version>
+        <hive.version>3.0.0</hive.version>
         <hiverunner.version>3.2.1</hiverunner.version>
       </properties>
       <dependencies>
