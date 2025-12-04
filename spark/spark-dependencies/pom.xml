@@ -45,7 +45,7 @@
     -->
 
     <hadoop.version>${hadoop2.7.version}</hadoop.version>
-    <yarn.version>${hadoop.version}</yarn.version>
+    <yarn.version>3.4.1</yarn.version>
     <avro.version>1.7.7</avro.version>
     <avro.mapred.classifier/>
     <jets3t.version>0.7.1</jets3t.version>
@@ -283,11 +283,8 @@
             <configuration>
               <target>
                 <delete dir="../../interpreter/spark/pyspark"/>
-                <copy todir="../../interpreter/spark/pyspark"
-                      file="${project.build.directory}/${spark.archive}/python/lib/py4j-${py4j.version}-src.zip"/>
-                <zip destfile="${project.build.directory}/../../../interpreter/spark/pyspark/pyspark.zip"
-                     basedir="${project.build.directory}/${spark.archive}/python"
-                     includes="pyspark/*.py,pyspark/**/*.py"/>
+                <copy todir="../../interpreter/spark/pyspark" file="${project.build.directory}/${spark.archive}/python/lib/py4j-${py4j.version}-src.zip"/>
+                <zip destfile="${project.build.directory}/../../../interpreter/spark/pyspark/pyspark.zip" basedir="${project.build.directory}/${spark.archive}/python" includes="pyspark/*.py,pyspark/**/*.py"/>
               </target>
             </configuration>
           </execution>
